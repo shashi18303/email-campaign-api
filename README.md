@@ -18,14 +18,18 @@ campaigns, simulating delivery, and viewing statistics.
 
 The API starts at `http://localhost:8080`.
 
-For PostgreSQL, copy `.env.example` values into the environment and run:
 
-```bash
-export DB_URL=jdbc:postgresql://localhost:5432/email_campaign
-export DB_USERNAME=postgres
-export DB_PASSWORD=your-password
-./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres
-```
+  "totalPages": 0,
+  "totalElements": 0,
+  "size": 10,
+  "content": [],
+  "number": 0,
+  "first": true,
+  "last": true,
+  "empty": true
+}
+
+The main class you need to run is EmailCampaignApiApplication.java
 
 The PostgreSQL schema is in `src/main/resources/db/schema-postgresql.sql`.
 
